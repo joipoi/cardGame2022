@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CardGame2022Application {
 
 	public static void main(String[] args) {
-		System.out.println("heyheybro");
+		System.out.println("testtesttestst");
 		SpringApplication.run(CardGame2022Application.class, args);
 	}
 
