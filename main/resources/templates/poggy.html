@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link th:href="@{/stylesheet.css}" rel="stylesheet" />
+<script type="text/javascript" th:src="@{/script.js}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text = "${name}"/>
+<p>hello bro</p>
+<h1 th:text = "${name}" > </h1>
+<button type="button" th:onclick="showName(nameJs);">Show Name</button>
+
+<script th:inline="javascript">
+    var nameJs = /*[[${name}]]*/;
+</script>
+</body>
+</html>
