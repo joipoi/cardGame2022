@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<link th:href="@{/stylesheet.css}" rel="stylesheet" />
+<!-- <link  rel="stylesheet" href="C:\Users\Joipoi\IdeaProjects\Java2022\demo\src\main\resources\static\stylesheet.css" /> -->
+<script type="text/javascript" th:src="@{/script.js}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="relicDiv"> <p>in relicDiv</p>
+        <button type="button" th:onclick="showName();">Show Name</button>
+    </div>
+
+    <div id="playerDiv">
+
+
+    </div>
+    <div id="backgroundDiv">
+        in background divaa
+    </div>
+    <div id="enemiesDiv">
+
+    </div>
+
+    <div id="cardDiv">
+
+
+    </div>
+    <div id="deckDiv">
+        in deck div
+    </div>
+    <div id="endTurnDiv">
+        in endturn div
+    </div>
+   <!-- <div id="discardDiv">
+        in discard div
+    </div> -->
+
+
+
+<script th:inline="javascript">
+var nameJs = /*[[${cards}]]*/;
+window.onload = init(nameJs);
+
+</script>
+</body>
+</html>

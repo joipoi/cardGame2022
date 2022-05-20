@@ -1,0 +1,29 @@
+for (let i = 0; i < cards.length; i++) {
+
+var img = document.createElement('img');
+img.src =
+
+
+     var imgString = '<img src="/images/';
+        switch(cards[i]) {
+           case "healing bolt":
+                             imgString+= 'heal.jpg"';
+                             console.log('healing bolt');
+                             break;
+           case "strike":
+                            imgString+= 'sword.png"';
+                            console.log('strike');
+                            break;
+           case "shield":
+                            imgString+= 'shield.png"';
+                            break;
+           default:
+                            console.log("drawcards icon failed");
+                            break;
+         }
+
+         imgString += 'id="card' + i + '"/>';
+          element.innerHTML += imgString; */
+
+
+    }
