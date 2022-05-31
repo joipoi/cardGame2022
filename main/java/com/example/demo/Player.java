@@ -7,6 +7,7 @@ public class Player extends Character{
     private int health;
     private ArrayList<Card> deck;
     private ArrayList<Card> hand;
+    private String name;
 
     public int getMana() {
         return mana;
@@ -48,6 +49,14 @@ public class Player extends Character{
         this.deck = deck;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void printDeck() {
         System.out.println("Printing deck: ");
         for (int i = 0; i < deck.size(); i++) {
@@ -61,6 +70,7 @@ public class Player extends Character{
         this.deck = deck;
         hand = new ArrayList<>();
         this.mana = startMana;
+        this.name = "player";
 
 
     }

@@ -20,7 +20,7 @@ margin:0px;
       "deck cards endTurn";
     grid-template-rows: 100px 1fr 250px;
     grid-template-columns: 20% 1fr 15%;
-    grid-gap: 10px;
+    grid-gap: 0px;
     height: 100vh;
     margin: 0;
     }
@@ -31,7 +31,6 @@ margin:0px;
 
 }
 #playerDiv {
-  background-color: green;
    grid-area: player;
 
 }
@@ -42,23 +41,19 @@ margin:0px;
 
 }
 #enemiesDiv {
-  background-color: black;
   grid-area: enemies;
 
 }
 #deckDiv {
-  background-color: red;
    grid-area: deck;
 
 }
 #cardDiv {
-  background-color: red;
    grid-area: cards;
 
 
 }
 #endTurnDiv {
-  background-color: red;
    grid-area: endTurn;
 
 }
@@ -67,7 +62,7 @@ margin:0px;
 
 }
 #cardDiv > img {
-height:250px;
+height:255px;
 width:130px;
 }
 #enemiesDiv > img {
@@ -75,8 +70,37 @@ height:250px;
 width:230px;
 }
 #playerDiv > img {
-height:530px;
+height:500px;
 width:100%;
 }
-
-
+#deckImg{
+width:100%;
+height:100%;
+margin:0px;
+  padding:0px;
+}
+#endTurnBtn{
+width:90%;
+height:90%;
+margin:0px;
+  padding:0px;
+}
+#playerDiv p {
+    font-size: 30px;
+}
+#popUpDiv {
+    width:400px;
+    height:500px;
+    background-color:gray;
+    display:none;
+    position:absolute;
+    left:100px;
+    top:300px;
+}
+#popUpDiv > img {
+height:180px;
+width:120px;
+}
+#popUpDiv > button {
+float:right;
+}

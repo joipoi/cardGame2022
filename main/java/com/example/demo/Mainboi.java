@@ -15,14 +15,14 @@ import java.util.ArrayList;
 @Controller
 public class Mainboi {
 
-    private Combat firstCombat = new Combat(new String[] { "goul", "harpy"} );;
+    private Combat firstCombat = new Combat(new String[] { "goul", "harpy"} );
     boolean targetBeingSelected = false;
     private Card cardBeingPlayed;
     private ArrayList<Card> playerDeck;
 
     private final int maxHandSize = 8;
 
-    @GetMapping("/main")
+    @GetMapping("/")
     public String greeting(@RequestParam(value = "name", defaultValue = "World") String name, Model model) {
         new Mainboi().go();
 
